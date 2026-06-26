@@ -22,21 +22,17 @@ body {
     overflow: hidden;
 }
 
-/* ===== COLONNE GAUCHE - HAUTEUR 100% ===== */
+/* ===== COLONNE GAUCHE ===== */
 .left {
     background: #0a2a5e;
     color: #fff;
-    padding: 18px 15px 15px 15px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    padding: 16px 14px;
 }
 
 .photo {
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
-    flex-shrink: 0;
 }
 
 .photo img {
@@ -47,16 +43,7 @@ body {
     border: 3px solid rgba(255,255,255,0.25);
 }
 
-.left section { 
-    margin-bottom: 12px; 
-    flex-shrink: 0;
-}
-
-/* ⭐ SECTION LANGUES POUSSEE EN BAS ⭐ */
-.left section:last-of-type {
-    margin-top: auto;
-    margin-bottom: 0;
-}
+.left section { margin-bottom: 14px; }
 
 .left h3 {
     display: flex;
@@ -68,7 +55,6 @@ body {
     border-bottom: 1.5px solid rgba(255,255,255,0.2);
     padding-bottom: 4px;
     margin-bottom: 6px;
-    letter-spacing: 0.5px;
 }
 
 .left h3 i {
@@ -110,19 +96,15 @@ body {
 
 .left ul:not(.contact) li::marker { color: #6ea8fe; }
 
-/* ===== COLONNE DROITE - HAUTEUR 100% ===== */
+/* ===== COLONNE DROITE ===== */
 .right {
-    padding: 18px 20px 15px 16px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    padding: 16px 18px 14px 14px;
 }
 
 header {
     margin-bottom: 8px;
     border-bottom: 2.5px solid #0a2a5e;
     padding-bottom: 5px;
-    flex-shrink: 0;
 }
 
 header h1 {
@@ -144,16 +126,7 @@ header h2 {
 }
 
 /* ===== BLOCS ===== */
-.bloc { 
-    margin-bottom: 6px; 
-    flex-shrink: 0;
-}
-
-/* ⭐ DERNIER BLOC (FORMATION) POUSSE EN BAS ⭐ */
-.bloc:last-of-type {
-    margin-top: auto;
-    margin-bottom: 0;
-}
+.bloc { margin-bottom: 6px; }
 
 .titre {
     display: flex;
@@ -192,7 +165,7 @@ header h2 {
 
 /* ===== EXPÉRIENCE ===== */
 .experience {
-    padding: 3px 0 2px 0;
+    padding: 3px 0;
     border-top: 1px solid #e2e8f0;
 }
 
@@ -235,7 +208,7 @@ header h2 {
     font-size: 8.5px;
     line-height: 1.25;
     color: #2d3748;
-    margin-bottom: 0.5px;
+    margin-bottom: 1px;
 }
 
 /* ===== FORMATION ===== */
@@ -244,7 +217,7 @@ header h2 {
     justify-content: space-between;
     align-items: baseline;
     border-top: 1px solid #e2e8f0;
-    padding: 3px 0 2px 0;
+    padding: 3px 0;
     gap: 5px;
 }
 
@@ -270,19 +243,10 @@ header h2 {
         grid-template-columns: 1fr;
         border-radius: 8px;
     }
-    .left { 
-        text-align: center; 
-        padding: 15px 12px; 
-        height: auto;
-    }
+    .left { text-align: center; padding: 14px 12px; }
     .left h3 { justify-content: center; }
     .left ul:not(.contact) li { list-style: none; margin-left: 0; }
-    .left section:last-of-type { margin-top: 10px; }
-    .right { 
-        padding: 15px 12px; 
-        height: auto;
-    }
-    .bloc:last-of-type { margin-top: 6px; }
+    .right { padding: 14px 12px; }
     .ligne { flex-direction: column; gap: 1px; }
     .formation { flex-direction: column; gap: 1px; }
     header h1 { font-size: 20px; text-align: center; }
